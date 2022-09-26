@@ -52,7 +52,7 @@ telescope.load_extension('media_files')
 local opts = { noremap = true, silent = true }
 
 vim.keymap.set('n', '<Leader>ff',
-  '<cmd>lua require("telescope.builtin").find_files( { no_ignore = false , hidden = true } )<cr>'
+  '<cmd>lua require("telescope.builtin").find_files( { no_ignore = false , respect_git_ignore = false , hidden = true } )<cr>'
   ,
   opts)
 vim.keymap.set('n', '<Leader>fg', '<cmd>lua require("telescope.builtin").live_grep()<cr>', opts)

@@ -10,8 +10,4 @@ vim.cmd('hi default HL_RltvNmbr_Positive gui=none,italic ctermfg=green ctermbg=n
 vim.cmd('colorscheme tokyonight')
 --vim.cmd('colorscheme nord')
 
-
-vim.g.bookmark_sign = 'ﯠ'
-vim.g.bookmark_annotation_sign = ''
-
 vim.g.rltvnbr = 1
