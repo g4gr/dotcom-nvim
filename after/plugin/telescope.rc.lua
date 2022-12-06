@@ -65,6 +65,9 @@ vim.keymap.set('n', '<Leader>fb',
     '<cmd>lua require("telescope.builtin").buffers( {layout_config = { prompt_position = "top" } } )<cr>', opts)
 vim.keymap.set('n', '<Leader>fd',
     '<cmd>lua require("telescope.builtin").diagnostics( {layout_config = { prompt_position = "top" } } )<cr>', opts)
+vim.keymap.set('n', '<Leader>fg', '<cmd>lua require("telescope.builtin").live_grep()<cr>', opts)
+vim.keymap.set('n', '<Leader>fb', '<cmd>lua require("telescope.builtin").buffers()<cr>', opts)
+vim.keymap.set('n', '<Leader>fd', '<cmd>lua require("telescope.builtin").diagnostics()<cr>', opts)
 vim.keymap.set('n', '<Leader>ft', '<cmd>:TodoTelescope<cr>', opts)
 vim.keymap.set('n', '<Leader>sf',
     '<cmd>lua require("telescope").extensions.file_browser.file_browser( { path = "%:p:h" , cwd = telescope_buffer_dir(), respect_git_ignore = false , hidden = true , grouped = true , preview = false , initial_mode = "normal" , layout_config = { height = 30 , prompt_position = "top" } } ) <cr>'
