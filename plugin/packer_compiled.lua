@@ -214,6 +214,11 @@ _G.packer_plugins = {
     path = "/Users/admin/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["telescope-emoji.nvim"] = {
+    loaded = true,
+    path = "/Users/admin/.local/share/nvim/site/pack/packer/start/telescope-emoji.nvim",
+    url = "https://github.com/xiyaowong/telescope-emoji.nvim"
+  },
   ["telescope-file-browser.nvim"] = {
     loaded = true,
     path = "/Users/admin/.local/share/nvim/site/pack/packer/start/telescope-file-browser.nvim",
@@ -248,6 +253,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/admin/.local/share/nvim/site/pack/packer/start/vim-deus",
     url = "https://github.com/ajmwagar/vim-deus"
+  },
+  ["virtcolumn.nvim"] = {
+    loaded = true,
+    path = "/Users/admin/.local/share/nvim/site/pack/packer/start/virtcolumn.nvim",
+    url = "https://github.com/xiyaowong/virtcolumn.nvim"
   },
   ["wilder.nvim"] = {
     loaded = true,

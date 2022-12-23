@@ -19,6 +19,7 @@ packer.startup(function(use)
     use 'gelguy/wilder.nvim'
     use 'folke/tokyonight.nvim'
 
+    use 'xiyaowong/virtcolumn.nvim'
     use 'vim-scripts/RltvNmbr.vim' -- Columna de numeros relativos
     use 'cohama/lexima.vim' -- Cerrar simbolos
     use 'norcalli/nvim-colorizer.lua' -- Colores
@@ -54,6 +55,7 @@ packer.startup(function(use)
     use 'nvim-telescope/telescope.nvim'
     use 'nvim-telescope/telescope-media-files.nvim'
     use 'nvim-telescope/telescope-file-browser.nvim'
+    use 'xiyaowong/telescope-emoji.nvim'
     use 'akinsho/bufferline.nvim'
     use {
         'glepnir/lspsaga.nvim',

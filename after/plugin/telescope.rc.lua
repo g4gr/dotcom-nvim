@@ -3,6 +3,7 @@ if (not status) then return end
 
 local actions = require('telescope.actions')
 local trouble = require("trouble.providers.telescope")
+local emoji = require("telescope").load_extension("emoji")
 
 function telescope_buffer_dir()
     return vim.fn.expand('%:p:h')
@@ -47,6 +48,18 @@ telescope.setup {
             filetypes = { "png", "webp", "jpg", "jpeg", "svg", "pdf" },
             find_cmd = "rg" -- find command (defaults to `fd`)
         },
+        emoji = {
+            action = function(emoji)
+                -- argument emoji is a table.
+                -- -- {name="", value="", cagegory="", description=""}
+
+                vim.fn.setreg("*", emoji.value)
+                print([[Press p or "*p to paste this emoji]] .. emoji.value)
+
+                -- insert emoji when picked
+                -- vim.api.nvim_put({ emoji.value }, 'c', false, true)
+            end,
+        }
 
     }
 }
@@ -65,10 +78,9 @@ vim.keymap.set('n', '<Leader>fb',
     '<cmd>lua require("telescope.builtin").buffers( {layout_config = { prompt_position = "top" } } )<cr>', opts)
 vim.keymap.set('n', '<Leader>fd',
     '<cmd>lua require("telescope.builtin").diagnostics( {layout_config = { prompt_position = "top" } } )<cr>', opts)
-vim.keymap.set('n', '<Leader>fg', '<cmd>lua require("telescope.builtin").live_grep()<cr>', opts)
-vim.keymap.set('n', '<Leader>fb', '<cmd>lua require("telescope.builtin").buffers()<cr>', opts)
-vim.keymap.set('n', '<Leader>fd', '<cmd>lua require("telescope.builtin").diagnostics()<cr>', opts)
 vim.keymap.set('n', '<Leader>ft', '<cmd>:TodoTelescope<cr>', opts)
-vim.keymap.set('n', '<Leader>sf',
-    '<cmd>lua require("telescope").extensions.file_browser.file_browser( { path = "%:p:h" , cwd = telescope_buffer_dir(), respect_git_ignore = false , hidden = true , grouped = true , preview = false , initial_mode = "normal" , layout_config = { height = 30 , prompt_position = "top" } } ) <cr>'
+vim.keymap.set('n', '<Leader>fs',
+    '<cmd>lua require("telescope").extensions.file_browser.file_browser( { path = "%:p:h" , cwd = telescope_buffer_dir(), respect_git_ignore = false , hidden = true , grouped = true , preview = false , initial_mode = "normal" , layout_config = { height = 40 , width = 130 , prompt_position = "top" } , layout_strategy = "flex" } ) <cr>'
     , opts)
+vim.keymap.set('n', '<leader>fe', '<cmd>:Telescope emoji<cr>', opts)
+vim.keymap.set('n', '<leader>fk', '<cmd>:Telescope keymaps<cr>', opts)
