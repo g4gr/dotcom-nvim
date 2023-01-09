@@ -31,6 +31,7 @@ packer.startup(function(use)
         requires = { 'kyazdani42/nvim-web-devicons', opt = true }
     }
     --use 'numToStr/FTerm.nvim'
+    use 'dm1try/golden_size'
     use 'neovim/nvim-lspconfig'
     use 'onsails/lspkind.nvim'
     use 'hrsh7th/nvim-cmp'
@@ -62,3 +63,5 @@ packer.startup(function(use)
         branch = "main"
     }
 end)
+
+-- TODO: Hacer tal cosa
