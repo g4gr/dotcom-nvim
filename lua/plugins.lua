@@ -19,6 +19,10 @@ packer.startup(function(use)
     use 'gelguy/wilder.nvim'
     use 'folke/tokyonight.nvim'
 
+    use {
+        'noib3/nvim-cokeline',
+        requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+    }
     use 'xiyaowong/virtcolumn.nvim'
     use 'vim-scripts/RltvNmbr.vim' -- Columna de numeros relativos
     use 'cohama/lexima.vim' -- Cerrar simbolos
@@ -30,7 +34,6 @@ packer.startup(function(use)
         'nvim-lualine/lualine.nvim',
         requires = { 'kyazdani42/nvim-web-devicons', opt = true }
     }
-    --use 'numToStr/FTerm.nvim'
     use 'dm1try/golden_size'
     use 'neovim/nvim-lspconfig'
     use 'onsails/lspkind.nvim'
@@ -57,11 +60,8 @@ packer.startup(function(use)
     use 'nvim-telescope/telescope-media-files.nvim'
     use 'nvim-telescope/telescope-file-browser.nvim'
     use 'xiyaowong/telescope-emoji.nvim'
-    use 'akinsho/bufferline.nvim'
     use {
         'glepnir/lspsaga.nvim',
         branch = "main"
     }
 end)
-
--- TODO: Hacer tal cosa
