@@ -27,9 +27,9 @@ packer.startup(function(use)
     use 'vim-scripts/RltvNmbr.vim' -- Columna de numeros relativos
     use 'cohama/lexima.vim' -- Cerrar simbolos
     use 'norcalli/nvim-colorizer.lua' -- Colores
+    use 'itchyny/vim-cursorword'
     use 'lukas-reineke/indent-blankline.nvim'
     use 'preservim/nerdcommenter' --Comentarios
-    use 'lewis6991/gitsigns.nvim' --Git
     use {
         'nvim-lualine/lualine.nvim',
         requires = { 'kyazdani42/nvim-web-devicons', opt = true }
