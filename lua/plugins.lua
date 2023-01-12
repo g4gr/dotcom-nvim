@@ -12,8 +12,6 @@ packer.startup(function(use)
     use { 'drewtempelmeyer/palenight.vim',
         requires = { 'tjdevries/colorbuddy.nvim' }
     }
-    use 'morhetz/gruvbox'
-    use 'ajmwagar/vim-deus'
     use 'arcticicestudio/nord-vim'
     use 'kyazdani42/nvim-web-devicons'
     use 'gelguy/wilder.nvim'
@@ -23,7 +21,6 @@ packer.startup(function(use)
         'noib3/nvim-cokeline',
         requires = { 'kyazdani42/nvim-web-devicons', opt = true }
     }
-    use 'xiyaowong/virtcolumn.nvim'
     use 'vim-scripts/RltvNmbr.vim' -- Columna de numeros relativos
     use 'cohama/lexima.vim' -- Cerrar simbolos
     use 'norcalli/nvim-colorizer.lua' -- Colores
