@@ -1,6 +1,24 @@
 local status, lualine = pcall(require, 'lualine')
 if (not status) then return end
 
+local modeComponent = {
+    'mode',
+    separator = {
+        right = ''
+    },
+    icons_enable = true,
+    padding = 1
+}
+
+local fileformatComponent = {
+    'fileformat',
+    separator = {
+        left = ''
+    },
+    icons_enable = true,
+    padding = 1,
+}
+
 lualine.setup {
     options = {
         component_separators = { left = '', right = '' },
@@ -9,10 +27,11 @@ lualine.setup {
         section_separators = {
             section_separators = { left = '', right = '' },
         },
+        always_divide_middle = true,
         disabled_filetypes = {},
     },
     sections = {
-        lualine_a = { 'mode' },
+        lualine_a = { modeComponent },
         lualine_b = {
             {
                 'filetype',
@@ -34,7 +53,12 @@ lualine.setup {
                 path = 0
             },
             {
-                'filesize'
+                'filesize',
+                separator = {
+                    right = ''
+                },
+                icons_enable = true,
+                padding = 1
             }
         },
         lualine_c = { 'branch' },
@@ -45,12 +69,12 @@ lualine.setup {
                 {
                     symbols = { error = '', warn = '', info = '', hint = '' }
                 },
+
             }
         },
-        lualine_y = {
-            'fileformat'
-        },
+        lualine_y = {},
         lualine_z = {
+            fileformatComponent,
             'progress',
             'location'
         }
@@ -69,11 +93,8 @@ lualine.setup {
         lualine_y = {},
         lualine_z = {}
     },
-    tabline = {
-    },
-    winbar = {
-    },
-    inactive_winbar = {
-    },
+    tabline = {},
+    winbar = {},
+    inactive_winbar = {},
     extensions = {},
 }
