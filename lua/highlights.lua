@@ -1,4 +1,5 @@
 vim.opt.background = 'dark'
+vim.opt.colorcolumn = '+1' --Se ajusta con la propiedad 'textwidth'
 vim.opt.cursorline = true
 vim.opt.termguicolors = true
 vim.opt.pumblend = 5
@@ -12,6 +13,4 @@ vim.cmd('colorscheme tokyonight-night')
 
 --vim.cmd('colorscheme nord')
 --vim.cmd('colorscheme doom-one')
-vim.g.virtcolumn_char = '▕' -- char to display the line
-vim.g.virtcolumn_priority = 10 -- priority of extmark
 vim.g.rltvnbr = 1

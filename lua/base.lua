@@ -25,6 +25,7 @@ vim.opt.listchars:append "space:⋅"
 vim.opt.listchars:append "eol:↴"
 vim.opt.path:append { '**' }
 vim.opt.tabstop = 4
+vim.opt.textwidth = 110
 vim.opt.title = true
 vim.opt.si = true
 vim.opt.shiftwidth = 4
