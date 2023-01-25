@@ -44,6 +44,7 @@ packer.startup(function(use)
         'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
     }
+    --use 'preservim/tagbar'
     use "folke/trouble.nvim"
     use {
         "folke/todo-comments.nvim",

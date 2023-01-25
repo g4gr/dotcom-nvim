@@ -4,7 +4,6 @@ if (not status) then return end
 local actions = require('telescope.actions')
 local trouble = require("trouble.providers.telescope")
 local emoji = require("telescope").load_extension("emoji")
-local lazygit = require("telescope").load_extension("lazygit")
 
 function telescope_buffer_dir()
     return vim.fn.expand('%:p:h')
@@ -85,6 +84,3 @@ vim.keymap.set('n', '<Leader>fs',
     , opts)
 vim.keymap.set('n', '<leader>fe', '<cmd>:Telescope emoji<cr>', opts)
 vim.keymap.set('n', '<leader>fk', '<cmd>:Telescope keymaps<cr>', opts)
-
-
-autocmd BufEnter * :lua require('lazygit.utils').project_root_dir()

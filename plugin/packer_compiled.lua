@@ -109,11 +109,6 @@ _G.packer_plugins = {
     path = "/Users/admin/.local/share/nvim/site/pack/packer/start/golden_size",
     url = "https://github.com/dm1try/golden_size"
   },
-  gruvbox = {
-    loaded = true,
-    path = "/Users/admin/.local/share/nvim/site/pack/packer/start/gruvbox",
-    url = "https://github.com/morhetz/gruvbox"
-  },
   ["indent-blankline.nvim"] = {
     loaded = true,
     path = "/Users/admin/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
@@ -178,11 +173,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/admin/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
     url = "https://github.com/norcalli/nvim-colorizer.lua"
-  },
-  ["nvim-cursorline"] = {
-    loaded = true,
-    path = "/Users/admin/.local/share/nvim/site/pack/packer/start/nvim-cursorline",
-    url = "https://github.com/yamatsum/nvim-cursorline"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -254,15 +244,10 @@ _G.packer_plugins = {
     path = "/Users/admin/.local/share/nvim/site/pack/packer/start/trouble.nvim",
     url = "https://github.com/folke/trouble.nvim"
   },
-  ["vim-deus"] = {
+  ["vim-cursorword"] = {
     loaded = true,
-    path = "/Users/admin/.local/share/nvim/site/pack/packer/start/vim-deus",
-    url = "https://github.com/ajmwagar/vim-deus"
-  },
-  ["virtcolumn.nvim"] = {
-    loaded = true,
-    path = "/Users/admin/.local/share/nvim/site/pack/packer/start/virtcolumn.nvim",
-    url = "https://github.com/xiyaowong/virtcolumn.nvim"
+    path = "/Users/admin/.local/share/nvim/site/pack/packer/start/vim-cursorword",
+    url = "https://github.com/itchyny/vim-cursorword"
   },
   ["wilder.nvim"] = {
     loaded = true,
