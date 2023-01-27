@@ -4,12 +4,15 @@ if (not status) then return end
 saga.setup {
     symbol_in_winbar = {
         enable = true,
-        separator = ' > ' ,--'  ',
+        separator = ' > ', --'  ',
         hide_keyword = true,
         show_file = true,
         folder_level = 2,
         respect_root = false,
         color_mode = true,
+    },
+    outline = {
+        custom_sort = 'true'
     },
     ui = {
         -- currently only round theme
@@ -42,7 +45,7 @@ saga.setup {
             white = '#d1d4cf',
             black = '#1c1c19',
         },
-    kind = {},
+        kind = {},
     },
 }
 
@@ -57,4 +60,5 @@ vim.keymap.set('n', 'gd', '<Cmd>Lspsaga lsp_finder<cr>', opts)
 vim.keymap.set('i', '<C-k>', '<Cmd>Lspsaga signature_help<cr>', opts)
 vim.keymap.set('n', 'gp', '<Cmd>Lspsaga peek_definition<cr>', opts)
 vim.keymap.set('n', 'gr', '<Cmd>Lspsaga rename<cr>', opts)
+vim.keymap.set('n', 'gra', '<Cmd>Lspsaga rename ++project<cr>', opts)
 vim.keymap.set('n', 'ca', '<Cmd>Lspsaga code_action<cr>', opts)
