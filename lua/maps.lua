@@ -30,6 +30,8 @@ keymap.set('', 'sk', '<C-w>k')
 keymap.set('', 'sj', '<C-w>j')
 keymap.set('', 'sl', '<C-w>l')
 
+-- Limpiar luego de una busqueda
+keymap.set('n', '<esc>', ':noh<Return><esc>', { silent = true })
 
 -- Configuracion teclas F
 
