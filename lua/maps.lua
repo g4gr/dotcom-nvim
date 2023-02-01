@@ -2,6 +2,11 @@ local keymap = vim.keymap
 
 keymap.set('n', 'x', '"_x')
 
+-- Guardar / Cerrar
+keymap.set('n', '<Leader>fq', ':q<Return>')
+keymap.set('n', '<Leader>fw', ':w<Return>')
+keymap.set('n', '<Leader>fwq', ':wq<Return>')
+
 --Aumentar / Decrementar
 keymap.set('n', '+', '<C-a>')
 keymap.set('n', '-', '<C-x>')
@@ -13,7 +18,6 @@ keymap.set('n', 'dw', 'vb"_d')
 keymap.set('n', 'te', ':tabedit<Return>', { silent = true })
 keymap.set('n', 'ss', ':split<Return><C-w>w', { silent = true })
 keymap.set('n', 'vs', ':vsplit<Return><C-w>w', { silent = true })
-keymap.set('n', '<Leader>c', ':close<Return><C-w>w', { silent = true })
 
 -- Movimiento entre ventanas
 keymap.set('n', '<Space>', '<C-w>w')

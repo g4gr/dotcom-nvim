@@ -33,6 +33,7 @@ vim.opt.showcmd = true
 vim.opt.smarttab = true
 vim.opt.scrolloff = 10
 vim.opt.shell = 'kitty'
+vim.opt.splitright = true
 vim.opt.swapfile = true
 vim.opt.wildmenu = true
 vim.opt.wildignore:append { '*/node_modules/*' }
