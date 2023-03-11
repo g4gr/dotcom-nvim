@@ -23,7 +23,7 @@ mason.setup {
             'eslint',
             'graphql',
             'jsonls',
-            'sumneko_lua',
+            'lsp_lua',
 
         }
     },

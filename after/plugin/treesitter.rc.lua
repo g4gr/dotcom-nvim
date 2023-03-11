@@ -4,7 +4,8 @@ if (not status) then return end
 ts.setup {
     highlight = {
         enable = true,
-        disable = {}
+        disable = {},
+        additional_vim_regex_highlighting = false,
     },
     indent = {
         enable = true,
@@ -12,6 +13,7 @@ ts.setup {
     },
     ensure_installed = {
         'html',
+        'markdown_inline',
         'markdown',
         'pug',
         'css',
@@ -20,6 +22,7 @@ ts.setup {
         'json',
         'tsx',
         'lua',
+        'python',
         'sql',
         'kotlin',
         'gitignore',
@@ -27,5 +30,7 @@ ts.setup {
     },
     autotag = {
         enable = true
-    }
+    },
+    sync_install = false,
+    auto_install = true,
 }

@@ -115,20 +115,6 @@ nvim_lsp.tsserver.setup {
     --root_dir = r
 }
 
-nvim_lsp.sumneko_lua.setup {
-    on_attach = on_attach,
-    settings = {
-        Lua = {
-            diagnostics = {
-                global = { 'vim' },
-                workspace = {
-                    library = vim.api.nvim_get_runtime_file("", true)
-                },
-            }
-        }
-    }
-
-}
 
 nvim_lsp.cssls.setup {
     on_attach = on_attach,

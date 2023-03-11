@@ -37,4 +37,3 @@ keymap.set('n', '<esc>', ':noh<Return><esc>', { silent = true })
 
 -- Configuracion Teclas numericas
 keymap.set('n', '<C-1>', ':ColorizerToggle<Return>', { silent = true })
-keymap.set('n', '<C-2>', ':RN<Return>', { silent = true }) -- RelativeNumbers

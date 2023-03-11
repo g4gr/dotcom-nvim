@@ -21,7 +21,6 @@ packer.startup(function(use)
         'noib3/nvim-cokeline',
         requires = { 'kyazdani42/nvim-web-devicons', opt = true }
     }
-    use 'vim-scripts/RltvNmbr.vim' -- Columna de numeros relativos
     use 'cohama/lexima.vim' -- Cerrar simbolos
     use 'norcalli/nvim-colorizer.lua' -- Colores
     use 'itchyny/vim-cursorword'

@@ -12,7 +12,36 @@ saga.setup {
         color_mode = true,
     },
     outline = {
-        custom_sort = 'true'
+        win_position = "right",
+        win_with = "",
+        win_width = 30,
+        show_detail = true,
+        auto_preview = true,
+        auto_refresh = true,
+        auto_close = true,
+        custom_sort = nil,
+        keys = {
+            jump = "o",
+            expand_collapse = "u",
+            quit = "q",
+        },
+    },
+    lightbulb = {
+        enable = true,
+        enable_in_insert = true,
+        sign = true,
+        sign_priority = 40,
+        virtual_text = true,
+    },
+    code_action = {
+        num_shortcut = true,
+        show_server_name = true,
+        extend_gitsigns = true,
+        keys = {
+          -- string | table type
+            quit = "q",
+            exec = "<CR>",
+        },
     },
     ui = {
         -- currently only round theme
@@ -20,9 +49,9 @@ saga.setup {
         -- this option only work in neovim 0.9
         title = true,
         -- border type can be single,double,rounded,solid,shadow.
-        border = 'solid',
+        border = 'single',
         winblend = 0,
-        expand = '',
+        expand = '>', -- '',
         collapse = '',
         preview = ' ',
         code_action = '💡',
@@ -54,7 +83,7 @@ local opts = {
     silent = true
 }
 vim.keymap.set('n', '<C-4>', '<Cmd>Lspsaga outline<cr>', opts)
-vim.keymap.set('n', 'gj', '<Cmd>Lspsaga diagnostic_jump_next<cr>', opts)
+vim.keymap.set('n', '<Leader>sd', '<Cmd>Lspsaga show_line_diagnostic<cr>', opts)
 vim.keymap.set('n', 'K', '<Cmd>Lspsaga hover_doc<cr>', opts)
 vim.keymap.set('n', 'gd', '<Cmd>Lspsaga lsp_finder<cr>', opts)
 vim.keymap.set('i', '<C-k>', '<Cmd>Lspsaga signature_help<cr>', opts)

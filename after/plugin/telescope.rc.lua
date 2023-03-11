@@ -82,5 +82,7 @@ vim.keymap.set('n', '<Leader>ft', '<cmd>:TodoTelescope<cr>', opts)
 vim.keymap.set('n', '<Leader>fs',
     '<cmd>lua require("telescope").extensions.file_browser.file_browser( { path = "%:p:h" , cwd = telescope_buffer_dir(), respect_git_ignore = false , hidden = true , grouped = true , preview = false , initial_mode = "normal" , layout_config = { height = 40 , width = 130 , prompt_position = "top" } , layout_strategy = "flex" } ) <cr>'
     , opts)
+vim.keymap.set('n', '<leader>fi', '<cmd>:Trouble lsp_implementations<cr>', opts)
+vim.keymap.set('n', '<leader>fr', '<cmd>:Trouble lsp_references<cr>', opts)
 vim.keymap.set('n', '<leader>fe', '<cmd>:Telescope emoji<cr>', opts)
 vim.keymap.set('n', '<leader>fk', '<cmd>:Telescope keymaps<cr>', opts)

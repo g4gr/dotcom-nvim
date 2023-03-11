@@ -79,11 +79,6 @@ _G.packer_plugins = {
     path = "/Users/admin/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  ["RltvNmbr.vim"] = {
-    loaded = true,
-    path = "/Users/admin/.local/share/nvim/site/pack/packer/start/RltvNmbr.vim",
-    url = "https://github.com/vim-scripts/RltvNmbr.vim"
-  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/Users/admin/.local/share/nvim/site/pack/packer/start/cmp-buffer",

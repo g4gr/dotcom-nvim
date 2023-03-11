@@ -6,6 +6,7 @@ vim.fileencoding = 'utf-8'
 
 vim.wo.number = true
 vim.wo.nu = true
+vim.wo.relativenumber = true
 
 vim.opt.ai = true
 vim.opt.autoindent = true
