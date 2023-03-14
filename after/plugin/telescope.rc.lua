@@ -4,6 +4,7 @@ if (not status) then return end
 local actions = require('telescope.actions')
 local trouble = require("trouble.providers.telescope")
 local emoji = require("telescope").load_extension("emoji")
+local gh = require('telescope').load_extension('gh')
 
 function telescope_buffer_dir()
     return vim.fn.expand('%:p:h')
@@ -86,3 +87,4 @@ vim.keymap.set('n', '<leader>fi', '<cmd>:Trouble lsp_implementations<cr>', opts)
 vim.keymap.set('n', '<leader>fr', '<cmd>:Trouble lsp_references<cr>', opts)
 vim.keymap.set('n', '<leader>fe', '<cmd>:Telescope emoji<cr>', opts)
 vim.keymap.set('n', '<leader>fk', '<cmd>:Telescope keymaps<cr>', opts)
+vim.keymap.set('n', '<leader>fh', '<cmd>:Telescope gh gist<cr>', opts) -- Mas info en https://cli.github.com/manual/
