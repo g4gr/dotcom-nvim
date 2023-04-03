@@ -30,10 +30,11 @@ keymap.set('', 'sk', '<C-w>k')
 keymap.set('', 'sj', '<C-w>j')
 keymap.set('', 'sl', '<C-w>l')
 
--- Limpiar luego de una busqueda
+-- Limpiar luego de una búsqueda
 keymap.set('n', '<esc>', ':noh<Return><esc>', { silent = true })
 
--- Configuracion teclas F
+-- Configuración teclas F
 
--- Configuracion Teclas numericas
+-- Configuración Teclas numéricas
 keymap.set('n', '<C-1>', ':ColorizerToggle<Return>', { silent = true })
+keymap.set('n', '<C-2>', ':set spell!<Return>', { silent = true })
