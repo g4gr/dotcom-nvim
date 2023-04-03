@@ -43,6 +43,15 @@ packer.startup(function(use)
         'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
     }
+    use {
+        'Wansmer/treesj',
+        requires = { 'nvim-treesitter' },
+    }
+    use { 'lewis6991/gitsigns.nvim' , -- Utilidad de Git
+        requires = {
+            'nvim-lua/plenary.nvim'
+        }
+    }
     --use 'preservim/tagbar'
     use "folke/trouble.nvim"
     use {
@@ -57,6 +66,7 @@ packer.startup(function(use)
     use 'nvim-telescope/telescope-media-files.nvim'
     use 'nvim-telescope/telescope-file-browser.nvim'
     use 'xiyaowong/telescope-emoji.nvim'
+    use 'nvim-telescope/telescope-github.nvim'
     use {
         'glepnir/lspsaga.nvim',
         branch = "main"

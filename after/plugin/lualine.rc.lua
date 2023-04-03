@@ -61,7 +61,7 @@ lualine.setup {
                 padding = 1
             }
         },
-        lualine_c = { 'branch' },
+        lualine_c = { 'b:gitsigns_status' },  --branch
         lualine_x = {
             {
                 'diagnostics',
